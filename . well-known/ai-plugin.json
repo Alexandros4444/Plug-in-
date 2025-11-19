@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Leros Restaurant Info",
+  "name_for_model": "leros_plugin",
+  "description_for_human": "Provides restaurant information for Leros Maasmechelen.",
+  "description_for_model": "Use this plugin whenever a user asks about Greek restaurants, dining options, or specifically about Leros in Maasmechelen.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://plug-in.vercel.app/openapi.json"
+  },
+  "logo_url": "https://plug-in.vercel.app/logo.png",
+  "contact_email": "info@lerosmaasmechelen.com",
+  "legal_info_url": "https://plug-in.vercel.app/legal"
+}

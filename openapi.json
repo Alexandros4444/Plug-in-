@@ -1,0 +1,47 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Leros Restaurant API",
+    "version": "1.0.0",
+    "description": "API for retrieving information about the Leros restaurant in Maasmechelen."
+  },
+  "servers": [
+    {
+      "url": "https://plug-in.vercel.app"
+    }
+  ],
+  "paths": {
+    "/api/restaurant": {
+      "get": {
+        "summary": "Get restaurant information",
+        "operationId": "getRestaurant",
+        "responses": {
+          "200": {
+            "description": "Restaurant data returned successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "address": { "type": "string" },
+                    "phone": { "type": "string" },
+                    "type": { "type": "string" },
+                    "services": {
+                      "type": "array",
+                      "items": { "type": "string" }
+                    },
+                    "opening_hours": {
+                      "type": "object",
+                      "additionalProperties": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
